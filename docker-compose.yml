@@ -1,0 +1,11 @@
+version: '2'
+services:
+  postgres:
+    image: postgres:9.6
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=demo
+      - POSTGRES_USER=demo
+      - POSTGRES_PASSWORD=12345678
+      - MAX_CONNECTIONS=300
